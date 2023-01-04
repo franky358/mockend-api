@@ -5,20 +5,20 @@
       "units": { "hasMany": "Unit" }
     },
     "Unit": {
-      "_": { "items": 5 },
+      "_": { "items": 15 },
       "name": { "loremWord": {} },
       "signature": { "belongsTo": "Signature" },
       "topics": { "hasMany": "Topic" }
 
     },
     "Topic": {
-        "_": { "items": 3 },
+        "_": { "items": 30 },
         "name": { "loremWord": {} },
         "unit": { "belongsTo": "Unit" },
         "subtopics": { "hasMany": "Subtopic" }
     },
     "Subtopic": {
-        "_": { "items": 5 },
+        "_": { "items": 50 },
         "name": { "loremWord": {} },
         "topics": { "belongsTo": "Topic" }
     }
