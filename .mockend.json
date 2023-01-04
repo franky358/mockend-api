@@ -1,11 +1,26 @@
 {
     "Signature": {
-      "_": { "items": 20 },
+      "_": { "items": 2 },
       "name": { "loremWord": {} },
-      "comments": { "hasMany": "Unit" }
+      "units": { "hasMany": "Unit" }
     },
     "Unit": {
+      "_": { "items": 5 },
       "name": { "loremWord": {} },
-      "post": { "belongsTo": "Signature" }
+      "signature": { "belongsTo": "Signature" },
+      "topics": { "hasMany": "Topic" }
+
+    },
+    "Topic": {
+        "_": { "items": 3 },
+        "name": { "loremWord": {} },
+        "unit": { "belongsTo": "Unit" },
+        "Subtopics": { "hasMany": "Subtopic" }
+    },
+    "Subtopic": {
+        "_": { "items": 5 },
+        "name": { "loremWord": {} },
+        "topics": { "belongsTo": "Topic" }
     }
 }
+
