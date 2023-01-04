@@ -1,11 +1,11 @@
 {
-    "Post": {
+    "Signature": {
       "_": { "items": 20 },
-      "title": { "string": {} },
-      "comments": { "hasMany": "Comment" }
+      "name": { "loremWord": {} },
+      "comments": { "hasMany": "Unit" }
     },
-    "Comment": {
-      "body": { "string": {} },
-      "post": { "belongsTo": "Post" }
+    "Unit": {
+      "name": { "loremWord": {} },
+      "post": { "belongsTo": "Signature" }
     }
 }
