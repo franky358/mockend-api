@@ -1,6 +1,6 @@
 {
     "Signature": {
-      "_": { "items": 2 },
+      "_": { "items": 5 },
       "name": { "loremWord": {} },
       "units": { "hasMany": "Unit" }
     },
@@ -15,7 +15,7 @@
         "_": { "items": 3 },
         "name": { "loremWord": {} },
         "unit": { "belongsTo": "Unit" },
-        "Subtopics": { "hasMany": "Subtopic" }
+        "subtopics": { "hasMany": "Subtopic" }
     },
     "Subtopic": {
         "_": { "items": 5 },
